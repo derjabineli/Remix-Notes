@@ -6,12 +6,10 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import MainNavigation from "~/components/MainNavigaton";
 
-import styles from './styles/main.css'
+import styles from '~/styles/main.css'
 
-export function links() {
-  return [{rel: 'stylesheet', href: styles}]
-}
 
 export default function App() {
   return (
@@ -23,6 +21,9 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <header>
+          <MainNavigation />
+        </header>
         <Outlet />
         <ScrollRestoration />
         <Scripts />
@@ -30,4 +31,8 @@ export default function App() {
       </body>
     </html>
   );
+}
+
+export function links() {
+  return [{rel: 'stylesheet', href: styles}]
 }
