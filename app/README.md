@@ -1,6 +1,5 @@
 # Quick Notes
-#### Video Demo:
-https://youtu.be/GjtkCCftbw8
+#### Video Demo: https://youtu.be/GjtkCCftbw8
 #### Description:
 This project is a Notes app built using React.js. I used the React Framework "Remix" as an
 alternative to Next.js as Remix utilizes Server Side rendering. The app allows you to view
@@ -27,4 +26,4 @@ what makes the dynamic routing method possible.
 
 The components folder contains a few reusable components that I created as stand alone
 components. Doing this allowed me to keep other files more concise and easier to keep
-track of. 
+track of.
