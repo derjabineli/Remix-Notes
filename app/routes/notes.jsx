@@ -1,13 +1,6 @@
-import {
-  useLoaderData,
-  json,
-  useCatch,
-  isRouteErrorResponse,
-  useRouteError,
-  Link,
-} from "@remix-run/react";
+import { useLoaderData, useRouteError, Link } from "@remix-run/react";
 import NoteList, { links as noteListLinks } from "~/components/NoteList";
-import NewNote, { links as newNotesLinks } from "~/components/NewNote";
+import { links as newNotesLinks } from "~/components/NewNote";
 import { getStoredNotes } from "~/data/notes";
 
 export default function NotesPage() {
@@ -22,7 +15,6 @@ export default function NotesPage() {
 
 export async function loader() {
   const notes = await getStoredNotes();
-  console.log(notes);
   if (!notes || notes.length === 0) {
     throw new Error("You haven't created any notes yet!");
   }
