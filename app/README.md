@@ -1,7 +1,7 @@
 # Quick Notes
 #### Video Demo: https://youtu.be/GjtkCCftbw8
 #### Description:
-This project is a Notes app built using React.js. I used the React Framework "Remix" as an
+####This project is a Notes app built using React.js. I used the React Framework "Remix" as an
 alternative to Next.js as Remix utilizes Server Side rendering. The app allows you to view
 created notes, and create new notes.
 
@@ -16,4 +16,4 @@ button to create a new note.
 The createnote route allows you to create a new note. The note includes a title and body
 and upon submitting generates a accurate time stamp.
 
-The notes route takes you to a page that displays all created notes and their information. 
+The notes route takes you to a page that displays all created notes and their information.
